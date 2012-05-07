@@ -1,4 +1,11 @@
 #!/usr/bin/env ruby
+# A simple script to check that words are hyphenated consistently in a
+# collection of text files (typically TeX source). The idea is that both
+# "nondeterministic" and "non-deterministic" are acceptable, but a single
+# document should use one variant consistently.
+#
+# Copyright (c) 2012, Neil Conway; see LICENSE.txt for distribution terms.
+
 require 'set'
 
 if ARGV.empty?
